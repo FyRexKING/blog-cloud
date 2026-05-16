@@ -1,0 +1,23 @@
+{
+  "name": "blog-cloud-app",
+  "version": "1.0.0",
+
+  "scripts": {
+
+    "install-all":
+      "cd server && npm install && cd ../client && npm install",
+
+    "server":
+      "cd server && node server.js",
+
+    "client":
+      "cd client && npm run dev -- --host",
+
+    "start":
+      "concurrently \"npm run server\" \"npm run client\""
+  },
+
+  "dependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
