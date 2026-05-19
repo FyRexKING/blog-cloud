@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Travel Chatbot</title>
+<style>
+    body{
+margin:0;
+font-family:Arial;
+background:lightgray;
+}
+header{
+background:blue;
+color:white;
+padding:15px;
+text-align:center;
+}
+section{
+padding:30px;
+text-align:center;
+}
+.chat{
+position:fixed;
+bottom:20px;
+right:20px;
+width:250px;
+background:white;
+border:1px solid black;
+}
+.top{
+background:blue;
+color:white;
+padding:10px;
+}
+.box{
+height:200px;
+padding:10px;
+overflow:auto;
+}
+input{
+width:65%;
+padding:5px;
+}
+button{
+width:30%;
+padding:5px;
+background:blue;
+color:white;
+}
+<!-- </style> -->
+<!-- </head>
+<body>
+<header><h1>Dream Travels</h1></header>
+<!-- <section></section>
+<h2>Explore Beautiful Destinations</h2>
+<p>Book flights, hotels and tours at best prices.</p>
+<!-- </section>
+<div class="chat">
+<div class="top">Travel Assistant</div>
+<div class="box" id="chat"></div>
+<input id="msg" placeholder="Ask here">
+<button onclick="reply()">Send</button>
+</div>
+<script>
+function reply(){
+let m=document.getElementById('msg').value.toLowerCase(),r='Please contact support';
+if(m.includes('hello')||m.includes('hi'))r='Hello! Where do you want to travel?';
+else if(m.includes('goa'))r='Goa packages start from ₹9999';
+else if(m.includes('manali'))r='Manali trip available with snowfall views';
+else if(m.includes('flight'))r='Flights are available at discounted prices';
+let c=document.getElementById('chat');
+c.innerHTML+='<p><b>You:</b> '+m+'</p><p><b>Bot:</b> '+r+'</p>';
+document.getElementById('msg').value='';
+c.scrollTop=c.scrollHeight;
+}
+</script>
+</body>
+</html>  --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Travel Chatbot</title>
+
+<style>
+body{
+font-family:Arial;
+}
+
+.chat{
+position:fixed;
+bottom:20px;
+right:20px;
+border:1px solid black;
+padding:10px;
+width:250px;
+background:white;
+}
+
+#chat{
+height:150px;
+overflow:auto;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Dream Travels</h1>
+
+<p>Book flights and hotels at low prices.</p>
+
+<div class="chat">
+
+<h3>Travel Bot</h3>
+
+<div id="chat"></div>
+
+<input id="msg">
+
+<button onclick="reply()">Send</button>
+
+</div>
+
+<script>
+
+function reply(){
+
+m=msg.value.toLowerCase()
+
+r="Sorry"
+
+if(m=="hi")
+r="Hello"
+
+else if(m=="goa")
+r="Goa package available"
+
+else if(m=="flight")
+r="Flights available"
+
+chat.innerHTML+="You: "+m+"<br>"
+chat.innerHTML+="Bot: "+r+"<br><br>"
+
+msg.value=""
+
+}
+
+</script>
+
+</body>
+</html>
